@@ -8,9 +8,11 @@ const Ending = () => {
 
     const [option, setOption] = useState(data.main)
 
-    const ending = (path) => {
-        setOption(data[path])
+    const nothing = () => {
+        console.log("Nothing")
     };
+
+    const [button_1, setButton_1] = useState(nothing())
 
     const restart_button = () =>{
         navigate('/option')
@@ -28,7 +30,13 @@ const Ending = () => {
         location.href = "https://google.com/"
     };
 
-    const button_state = {ending}
+    const ending = (path) => {
+        setOption(data[path])
+
+        if (path != "main"){
+        setButton_1(restart_button())
+        };
+    };
 
     return ( 
         <>
@@ -43,7 +51,7 @@ const Ending = () => {
                     </p>
                 </div>
                 <div className="w-8/12 p-4 flex justify-center gap-24">
-                    <button className="w-2/6 border-2 text-4xl border-white bg-black text-white font-heading rounded-xl" onClick={() => {button_state(option.button_1_path)}}>{option.restart}</button>
+                    <button className="w-2/6 border-2 text-4xl border-white bg-black text-white font-heading rounded-xl" onClick={() => {{button_1} ending(option.button_1_path)}}>{option.restart}</button>
                     <button className="w-2/6 border-2 text-4xl border-white bg-black text-white font-heading rounded-xl">{option.home}</button>
                     <button className="w-2/6 border-2 text-4xl border-white bg-black text-white font-heading rounded-xl">{option.github}</button>
                     <button className="w-2/6 border-2 text-4xl border-white bg-black text-white font-heading rounded-xl">{option.exit}</button>

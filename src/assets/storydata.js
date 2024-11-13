@@ -737,12 +737,14 @@ const data = {
         option_1_path: null,
         option_text_2: "Leave Leo",
         option_2_path: null,
-
-        main:{
+    },
+        
+    main:{
             header:"November 4th 1947, 02:59AM",
             body:"You have run out of time. Who did it?",
             restart:"Mathew",
             button_1_path:"Mathew",
+            button_state_1: "ending",
             home:"Nancy",
             button_1_path:"Nancy",
             github:"Leo",
@@ -751,7 +753,17 @@ const data = {
             button_1_path:"Karen",
         },
         
-        Mathew: {
+    Mathew: {
+            header:"November 4th 1947, 03:00AM",
+            body:"You were wrong BAD ENDING",
+            restart:"RESTART",
+            button_1_path:"restart_button",
+            home:"HOME",
+            github:"GITHUB",
+            exit:"EXIT",
+        },
+    
+    Nancy: {
             header:"November 4th 1947, 03:00AM",
             body:"You were wrong BAD ENDING",
             restart:"RESTART",
@@ -760,7 +772,7 @@ const data = {
             exit:"EXIT",
         },
     
-        Nancy: {
+    Leo: {
             header:"November 4th 1947, 03:00AM",
             body:"You were wrong BAD ENDING",
             restart:"RESTART",
@@ -769,16 +781,7 @@ const data = {
             exit:"EXIT",
         },
     
-        Leo: {
-            header:"November 4th 1947, 03:00AM",
-            body:"You were wrong BAD ENDING",
-            restart:"RESTART",
-            home:"HOME",
-            github:"GITHUB",
-            exit:"EXIT",
-        },
-    
-        Karen: {
+    Karen: {
             header:"November 4th 1947, 03:00AM",
             body:"Wow you actually got it. GOOD ENDING",
             restart:"RESTART",
@@ -787,15 +790,14 @@ const data = {
             exit:"EXIT",
         },
     
-        dismiss: {
-            header:"",
-            body:"",
-            restart:"",
-            home:"",
-            github:"",
-            exit:"",
+    dismiss: {
+            header:"November 4th 1947, 03:00AM",
+            body:"Wow you actually got it. GOOD ENDING",
+            restart:"RESTART",
+            home:"HOME",
+            github:"GITHUB",
+            exit:"EXIT",
         },
-    },
 }
 
 export default data;
