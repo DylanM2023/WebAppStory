@@ -18,6 +18,25 @@ const Ending = () => {
                         <h1 className="w-full px-8 py-6 text-3xl">
                             November 4th 1947, 03:00AM
                         </h1>
+
+                        <p className="w-full px-8 text-3xl"> 
+                            Time has officially run out, therefore you must decide who killed Sharon.
+                        </p>
+                        <p className="w-full px-8 text-3xl"> 
+                            Pick one of the four suspects:
+                        </p>
+                        <li className="w-full px-8 text-3xl"> 
+                            Mathew - Business Man 
+                        </li>
+                        <li className="w-full px-8 text-3xl"> 
+                            Nancy - Victim's Friend 
+                        </li>
+                        <li className="w-full px-8 text-3xl"> 
+                            Leo - Street Kid
+                        </li>
+                        <li className="w-full px-8 text-3xl"> 
+                            Karen - Old Woman
+                        </li>
                     </div>
                     <div className="w-8/12 p-4 flex justify-center gap-24">
                             <button className="w-2/6 border-2 text-4xl border-white bg-black text-white font-heading rounded-xl" onClick={()=>{setGuess("Mathew")}}>Mathew</button>
@@ -34,9 +53,15 @@ const Ending = () => {
                 <div className="bg-skyline bg-no-repeat bg-cover bg-center h-screen w-screen text-white flex flex-wrap justify-center">
                     <NavBar/>
                     <div className="bg-Beige w-8/12 h-4/6 border-4 border-black font-typewriter text-black text-2xl flex flex-wrap rounded-xl overflow-y-auto"> 
-                        <h1 className="w-full px-8 py-6 text-3xl">
-                            BAD ENDING You were wrong.
+                        <h1 className="w-full px-8 py-6 text-5xl">
+                            November 4th 1947, 03:01AM
                         </h1>
+                        <p className="flex w-full px-12 text-6xl justify-center items center"> 
+                            Mathew was NOT the killer
+                        </p>
+                        <p className="flex w-full px-12 text-6xl justify-center items center"> 
+                            Ending: BAD
+                        </p>
                     </div>
                     <div className="w-8/12 p-4 flex justify-center gap-24">
                             <button className="w-2/6 border-2 text-4xl border-white bg-black text-white font-heading rounded-xl" onClick={() => {navigate("/option")}}>Play Again</button>
@@ -51,9 +76,15 @@ const Ending = () => {
                 <div className="bg-skyline bg-no-repeat bg-cover bg-center h-screen w-screen text-white flex flex-wrap justify-center">
                     <NavBar/>
                     <div className="bg-Beige w-8/12 h-4/6 border-4 border-black font-typewriter text-black text-2xl flex flex-wrap rounded-xl overflow-y-auto"> 
-                        <h1 className="w-full px-8 py-6 text-3xl">
-                            BAD ENDING You were wrong.
+                        <h1 className="w-full px-8 py-6 text-5xl">
+                            November 4th 1947, 03:01AM
                         </h1>
+                        <p className="flex w-full px-12 text-6xl justify-center items center"> 
+                            Nancy was NOT the killer
+                        </p>
+                        <p className="flex w-full px-12 text-6xl justify-center items center"> 
+                            Ending: BAD
+                        </p>
                     </div>
                     <div className="w-8/12 p-4 flex justify-center gap-24">
                             <button className="w-2/6 border-2 text-4xl border-white bg-black text-white font-heading rounded-xl" onClick={() => {navigate("/option")}}>Play Again</button>
@@ -68,9 +99,15 @@ const Ending = () => {
                 <div className="bg-skyline bg-no-repeat bg-cover bg-center h-screen w-screen text-white flex flex-wrap justify-center">
                     <NavBar/>
                     <div className="bg-Beige w-8/12 h-4/6 border-4 border-black font-typewriter text-black text-2xl flex flex-wrap rounded-xl overflow-y-auto"> 
-                        <h1 className="w-full px-8 py-6 text-3xl">
-                            BAD ENDING You were wrong.
+                    <h1 className="w-full px-8 py-6 text-5xl">
+                            November 4th 1947, 03:01AM
                         </h1>
+                        <p className="flex w-full px-12 text-6xl justify-center items center"> 
+                            Leo was NOT the killer
+                        </p>
+                        <p className="flex w-full px-12 text-6xl justify-center items center"> 
+                            Ending: BAD
+                        </p>
                     </div>
                     <div className="w-8/12 p-4 flex justify-center gap-24">
                             <button className="w-2/6 border-2 text-4xl border-white bg-black text-white font-heading rounded-xl" onClick={() => {navigate("/option")}}>Play Again</button>
@@ -85,9 +122,15 @@ const Ending = () => {
                 <div className="bg-skyline bg-no-repeat bg-cover bg-center h-screen w-screen text-white flex flex-wrap justify-center">
                     <NavBar/>
                     <div className="bg-Beige w-8/12 h-4/6 border-4 border-black font-typewriter text-black text-2xl flex flex-wrap rounded-xl overflow-y-auto"> 
-                        <h1 className="w-full px-8 py-6 text-3xl">
-                            GOOD ENDING You were right.
+                        <h1 className="w-full px-8 py-6 text-5xl">
+                            November 4th 1947, 03:01AM
                         </h1>
+                        <p className="flex w-full px-12 text-6xl justify-center items center"> 
+                            Karen was the killer
+                        </p>
+                        <p className="flex w-full px-12 text-6xl justify-center items center"> 
+                            Ending: GOOD
+                        </p>
                     </div>
                     <div className="w-8/12 p-4 flex justify-center gap-24">
                             <button className="w-2/6 border-2 text-4xl border-white bg-black text-white font-heading rounded-xl" onClick={() => {navigate("/option")}}>Play Again</button>
