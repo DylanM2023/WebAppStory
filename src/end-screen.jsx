@@ -6,57 +6,96 @@ import { useNavigate } from "react-router-dom";
 const Ending = () => {
     const navigate = useNavigate();
 
-    const [option, setOption] = useState(data.main)
-
-    const nothing = () => {
-        console.log("Nothing")
-    };
-
-    const [button_1, setButton_1] = useState(nothing())
-
-    const restart_button = () =>{
-        navigate('/option')
-    };
-
-    const home_button = () =>{
-        navigate('/')
-    };
-
-    const github_button = () =>{
-        location.href = "https://github.com/DylanM2023/frameworks/"
-    };
-
-    const exit_button = () =>{
-        location.href = "https://google.com/"
-    };
-
-    const ending = (path) => {
-        setOption(data[path])
-
-        if (path != "main"){
-        setButton_1(restart_button())
-        };
-    };
+    const [guess, setGuess] = useState(null)
 
     return ( 
         <>
-            <div className="bg-skyline bg-no-repeat bg-cover bg-center h-screen w-screen text-white flex flex-wrap justify-center">
+            {!guess && (
+                <>
+                <div className="bg-skyline bg-no-repeat bg-cover bg-center h-screen w-screen text-white flex flex-wrap justify-center">
                     <NavBar/>
-                <div className="bg-Beige w-8/12 h-4/6 border-4 border-black font-typewriter text-black text-2xl flex flex-wrap rounded-xl overflow-y-auto"> 
-                    <h1 className="w-full px-8 py-6 text-3xl">
-                        {option.header}
-                    </h1>
-                    <p className="w-full px-8 text-3xl">
-                        {option.body}
-                    </p>
+                    <div className="bg-Beige w-8/12 h-4/6 border-4 border-black font-typewriter text-black text-2xl flex flex-wrap rounded-xl overflow-y-auto"> 
+                        <h1 className="w-full px-8 py-6 text-3xl">
+                            This is an end screen
+                        </h1>
+                    </div>
+                    <div className="w-8/12 p-4 flex justify-center gap-24">
+                            <button className="w-2/6 border-2 text-4xl border-white bg-black text-white font-heading rounded-xl" onClick={()=>{setGuess("Mathew")}}>Mathew</button>
+                            <button className="w-2/6 border-2 text-4xl border-white bg-black text-white font-heading rounded-xl" onClick={()=>{setGuess("Mathew")}}>Nancy</button>
+                            <button className="w-2/6 border-2 text-4xl border-white bg-black text-white font-heading rounded-xl" onClick={()=>{setGuess("Mathew")}}>Leo</button>
+                            <button className="w-2/6 border-2 text-4xl border-white bg-black text-white font-heading rounded-xl" onClick={()=>{setGuess("Mathew")}}>Karen</button>
+                    </div>
                 </div>
-                <div className="w-8/12 p-4 flex justify-center gap-24">
-                    <button className="w-2/6 border-2 text-4xl border-white bg-black text-white font-heading rounded-xl" onClick={() => {{button_1} ending(option.button_1_path)}}>{option.restart}</button>
-                    <button className="w-2/6 border-2 text-4xl border-white bg-black text-white font-heading rounded-xl">{option.home}</button>
-                    <button className="w-2/6 border-2 text-4xl border-white bg-black text-white font-heading rounded-xl">{option.github}</button>
-                    <button className="w-2/6 border-2 text-4xl border-white bg-black text-white font-heading rounded-xl">{option.exit}</button>
+                </>
+            )}
+
+            {guess == "Mathew" && (
+                <>
+                <div className="bg-skyline bg-no-repeat bg-cover bg-center h-screen w-screen text-white flex flex-wrap justify-center">
+                    <NavBar/>
+                    <div className="bg-Beige w-8/12 h-4/6 border-4 border-black font-typewriter text-black text-2xl flex flex-wrap rounded-xl overflow-y-auto"> 
+                        <h1 className="w-full px-8 py-6 text-3xl">
+                            This is an end screen
+                        </h1>
+                    </div>
+                    <div className="w-8/12 p-4 flex justify-center gap-24">
+                            <button className="w-2/6 border-2 text-4xl border-white bg-black text-white font-heading rounded-xl" onClick={() => {navigate("/option")}}>Play Again</button>
+                            <button className="w-2/6 border-2 text-4xl border-white bg-black text-white font-heading rounded-xl" onClick={() => {navigate("/")}}>Home</button>
+                    </div>
                 </div>
-            </div>
+                </>
+            )}
+
+            {guess == "Nancy" && (
+                <>
+                <div className="bg-skyline bg-no-repeat bg-cover bg-center h-screen w-screen text-white flex flex-wrap justify-center">
+                    <NavBar/>
+                    <div className="bg-Beige w-8/12 h-4/6 border-4 border-black font-typewriter text-black text-2xl flex flex-wrap rounded-xl overflow-y-auto"> 
+                        <h1 className="w-full px-8 py-6 text-3xl">
+                            This is an end screen
+                        </h1>
+                    </div>
+                    <div className="w-8/12 p-4 flex justify-center gap-24">
+                            <button className="w-2/6 border-2 text-4xl border-white bg-black text-white font-heading rounded-xl" onClick={() => {navigate("/option")}}>Play Again</button>
+                            <button className="w-2/6 border-2 text-4xl border-white bg-black text-white font-heading rounded-xl" onClick={() => {navigate("/")}}>Home</button>
+                    </div>
+                </div>
+                </>
+            )}
+
+            {guess == "Leo" && (
+                <>
+                <div className="bg-skyline bg-no-repeat bg-cover bg-center h-screen w-screen text-white flex flex-wrap justify-center">
+                    <NavBar/>
+                    <div className="bg-Beige w-8/12 h-4/6 border-4 border-black font-typewriter text-black text-2xl flex flex-wrap rounded-xl overflow-y-auto"> 
+                        <h1 className="w-full px-8 py-6 text-3xl">
+                            This is an end screen
+                        </h1>
+                    </div>
+                    <div className="w-8/12 p-4 flex justify-center gap-24">
+                            <button className="w-2/6 border-2 text-4xl border-white bg-black text-white font-heading rounded-xl" onClick={() => {navigate("/option")}}>Play Again</button>
+                            <button className="w-2/6 border-2 text-4xl border-white bg-black text-white font-heading rounded-xl" onClick={() => {navigate("/")}}>Home</button>
+                    </div>
+                </div>
+                </>
+            )}
+
+            {guess == "Karen" && (
+                <>
+                <div className="bg-skyline bg-no-repeat bg-cover bg-center h-screen w-screen text-white flex flex-wrap justify-center">
+                    <NavBar/>
+                    <div className="bg-Beige w-8/12 h-4/6 border-4 border-black font-typewriter text-black text-2xl flex flex-wrap rounded-xl overflow-y-auto"> 
+                        <h1 className="w-full px-8 py-6 text-3xl">
+                            This is an end screen
+                        </h1>
+                    </div>
+                    <div className="w-8/12 p-4 flex justify-center gap-24">
+                            <button className="w-2/6 border-2 text-4xl border-white bg-black text-white font-heading rounded-xl" onClick={() => {navigate("/option")}}>Play Again</button>
+                            <button className="w-2/6 border-2 text-4xl border-white bg-black text-white font-heading rounded-xl" onClick={() => {navigate("/")}}>Home</button>
+                    </div>
+                </div>
+                </>
+            )}
         </>
     );
 }
