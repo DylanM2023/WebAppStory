@@ -737,6 +737,65 @@ const data = {
         option_1_path: null,
         option_text_2: "Leave Leo",
         option_2_path: null,
+
+        main:{
+            header:"November 4th 1947, 02:59AM",
+            body:"You have run out of time. Who did it?",
+            restart:"Mathew",
+            button_1_path:"Mathew",
+            home:"Nancy",
+            button_1_path:"Nancy",
+            github:"Leo",
+            button_1_path:"Leo",
+            exit:"Karen",
+            button_1_path:"Karen",
+        },
+        
+        Mathew: {
+            header:"November 4th 1947, 03:00AM",
+            body:"You were wrong BAD ENDING",
+            restart:"RESTART",
+            home:"HOME",
+            github:"GITHUB",
+            exit:"EXIT",
+        },
+    
+        Nancy: {
+            header:"November 4th 1947, 03:00AM",
+            body:"You were wrong BAD ENDING",
+            restart:"RESTART",
+            home:"HOME",
+            github:"GITHUB",
+            exit:"EXIT",
+        },
+    
+        Leo: {
+            header:"November 4th 1947, 03:00AM",
+            body:"You were wrong BAD ENDING",
+            restart:"RESTART",
+            home:"HOME",
+            github:"GITHUB",
+            exit:"EXIT",
+        },
+    
+        Karen: {
+            header:"November 4th 1947, 03:00AM",
+            body:"Wow you actually got it. GOOD ENDING",
+            restart:"RESTART",
+            home:"HOME",
+            github:"GITHUB",
+            exit:"EXIT",
+        },
+    
+        dismiss: {
+            header:"",
+            body:"",
+            restart:"",
+            home:"",
+            github:"",
+            exit:"",
+        },
     },
 }
+
 export default data;
