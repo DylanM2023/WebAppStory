@@ -16,14 +16,14 @@ const Ending = () => {
                     <NavBar/>
                     <div className="bg-Beige w-8/12 h-4/6 border-4 border-black font-typewriter text-black text-2xl flex flex-wrap rounded-xl overflow-y-auto"> 
                         <h1 className="w-full px-8 py-6 text-3xl">
-                            This is an end screen
+                            November 4th 1947, 03:00AM
                         </h1>
                     </div>
                     <div className="w-8/12 p-4 flex justify-center gap-24">
                             <button className="w-2/6 border-2 text-4xl border-white bg-black text-white font-heading rounded-xl" onClick={()=>{setGuess("Mathew")}}>Mathew</button>
-                            <button className="w-2/6 border-2 text-4xl border-white bg-black text-white font-heading rounded-xl" onClick={()=>{setGuess("Mathew")}}>Nancy</button>
-                            <button className="w-2/6 border-2 text-4xl border-white bg-black text-white font-heading rounded-xl" onClick={()=>{setGuess("Mathew")}}>Leo</button>
-                            <button className="w-2/6 border-2 text-4xl border-white bg-black text-white font-heading rounded-xl" onClick={()=>{setGuess("Mathew")}}>Karen</button>
+                            <button className="w-2/6 border-2 text-4xl border-white bg-black text-white font-heading rounded-xl" onClick={()=>{setGuess("Nancy")}}>Nancy</button>
+                            <button className="w-2/6 border-2 text-4xl border-white bg-black text-white font-heading rounded-xl" onClick={()=>{setGuess("Leo")}}>Leo</button>
+                            <button className="w-2/6 border-2 text-4xl border-white bg-black text-white font-heading rounded-xl" onClick={()=>{setGuess("Karen")}}>Karen</button>
                     </div>
                 </div>
                 </>
@@ -35,7 +35,7 @@ const Ending = () => {
                     <NavBar/>
                     <div className="bg-Beige w-8/12 h-4/6 border-4 border-black font-typewriter text-black text-2xl flex flex-wrap rounded-xl overflow-y-auto"> 
                         <h1 className="w-full px-8 py-6 text-3xl">
-                            This is an end screen
+                            BAD ENDING You were wrong.
                         </h1>
                     </div>
                     <div className="w-8/12 p-4 flex justify-center gap-24">
@@ -52,7 +52,7 @@ const Ending = () => {
                     <NavBar/>
                     <div className="bg-Beige w-8/12 h-4/6 border-4 border-black font-typewriter text-black text-2xl flex flex-wrap rounded-xl overflow-y-auto"> 
                         <h1 className="w-full px-8 py-6 text-3xl">
-                            This is an end screen
+                            BAD ENDING You were wrong.
                         </h1>
                     </div>
                     <div className="w-8/12 p-4 flex justify-center gap-24">
@@ -69,7 +69,7 @@ const Ending = () => {
                     <NavBar/>
                     <div className="bg-Beige w-8/12 h-4/6 border-4 border-black font-typewriter text-black text-2xl flex flex-wrap rounded-xl overflow-y-auto"> 
                         <h1 className="w-full px-8 py-6 text-3xl">
-                            This is an end screen
+                            BAD ENDING You were wrong.
                         </h1>
                     </div>
                     <div className="w-8/12 p-4 flex justify-center gap-24">
@@ -86,7 +86,7 @@ const Ending = () => {
                     <NavBar/>
                     <div className="bg-Beige w-8/12 h-4/6 border-4 border-black font-typewriter text-black text-2xl flex flex-wrap rounded-xl overflow-y-auto"> 
                         <h1 className="w-full px-8 py-6 text-3xl">
-                            This is an end screen
+                            GOOD ENDING You were right.
                         </h1>
                     </div>
                     <div className="w-8/12 p-4 flex justify-center gap-24">
