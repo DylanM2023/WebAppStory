@@ -18,7 +18,6 @@ const Ending = () => {
                         <h1 className="w-full px-8 py-6 text-3xl">
                             November 4th 1947, 03:00AM
                         </h1>
-
                         <p className="w-full px-8 text-3xl"> 
                             Time has officially run out, therefore you must decide who killed Sharon.
                         </p>

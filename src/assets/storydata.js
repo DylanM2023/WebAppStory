@@ -6,13 +6,9 @@ const data = {
                     "NOTES: The Chief is in his usual lazy mood and doesn’t want to “Waste good officers on a case that lacks importance”. Due to our leader’s familiar incompetence this case has been passed around the office like a bad cold. I mean who would waste there time on a case if they only have 1 hour to solve it? So to whoever is reading this, I guess it's up to you whether you dismiss this case or... Dig a Little Bit Deeper.",
                     ],
         option_text_1: "Dismiss",
-        option_1_path: "dismissal",
+        option_1_path: null,
         option_text_2: "Dig a Little Deeper?",
         option_2_path:"meet_the_witnesses",
-    },
-
-    dismissal: {
-        option_1_path: null,
     },
 
     meet_the_witnesses: {
