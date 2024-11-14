@@ -7,7 +7,7 @@ const NavBar = () => {
         <audio className= "right-0 p-4 font-heading" controls loop>
             <source src="noir.mp3"/>
         </audio>
-        <a href="https://github.com/DylanM2023/frameworks/" target="_blank" className="text-white text-2xl right-0 p-4 font-heading">GITHUB</a>
+        <a href="https://github.com/DylanM2023/webappstory/" target="_blank" className="text-white text-2xl right-0 p-4 font-heading">GITHUB</a>
         <a href="/" className="text-white text-2xl right-0 p-4 font-heading">HOME</a>
         <a href="https://google.com" className="text-white text-2xl right-0 p-4 font-heading">EXIT</a>
     </nav> );
